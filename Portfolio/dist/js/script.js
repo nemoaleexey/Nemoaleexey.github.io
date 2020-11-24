@@ -25,21 +25,26 @@ $("a[href^='#']").click(function() { // Это универсальный пла
 
 $('input[name=user_phone]').mask("+7 (999) 999-99-99");
 
-$(function() { //прогресс бар
 
-    $(".skill_per").each(function() {
-        $this = $(this);
-        var per = $(this).attr("per");
-        $this.css("width", per + "%");
-        $this.find(".value").text(per + "%").css("opacity", "1");
 
-    });
+
+
+
+
+
+$(window).scroll(function(e) {
+
+    if ($(window).scrollTop() >= 2800) {
+        $(".skill_per").each(function() {
+            $this = $(this);
+            var per = $(this).attr("per");
+            $this.css("width", per + "%");
+            $this.find(".value").text(per + "%").css("opacity", "1");
+
+        });
+    }
 
 });
-
-
-
-
 
 AOS.init({
     // Global settings:
