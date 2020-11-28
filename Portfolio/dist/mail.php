@@ -29,7 +29,7 @@ $mail->addAddress('alesha.b.0002@gmail.com');     // Кому будет ухо�
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Заявка с моего сайта';
-$mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone.$text;
+$mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone. '<br>Письмо этого пользователя: ' .$text;
 $mail->AltBody = '';
 
 if(!$mail->send()) {
