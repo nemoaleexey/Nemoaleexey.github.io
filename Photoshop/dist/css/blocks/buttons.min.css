@@ -1,0 +1,1 @@
+.btn{height:45px;background:#2196f3;box-shadow:0 4px 4px rgba(0,0,0,.15);padding:12px 25px;border-radius:100px}.btn:hover{box-shadow:0 0 10px #2196f3,0 0 100px #2196f3;background-color:#2196f3;color:#fff;transition:.5s;text-decoration:none;transform:scale(1.1)}.btn:not(:hover){transition:1s}
